@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/txtCheck" />
+
+<TextView
+    android:text="SAMPLE"
+    android:layout_width="match_parent"
+    android:id="@+id/txtSample"
+    android:layout_height="80dp" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imgIcon"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:layout_width="60dp" />
+
+    <TextView
+        android:text="Question"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/txtQuestion"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGroup1">
+
+    <RadioButton
+        android:text="A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton1"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:text="B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:text="C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton3"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:text="D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton4"
+        android:layout_weight="1" />
+</RadioGroup>
+
+<Button
+    android:text="Chọn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnChoise" />
+
+</LinearLayout>
